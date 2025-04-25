@@ -1,0 +1,109 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/background.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+body.light-theme #hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url('/wbackground.png') no-repeat center center/cover;
+    color: #222;
+}
+
+
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.why-us {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;  /* Теперь полностью перекрывает изображение */
+    background: rgba(10, 10, 30, 0.95);
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: bottom 0.6s ease-in-out;
+    box-sizing: border-box;
+
+}
+body.light-theme .why-us {
+    background: rgba(240, 240, 240, 0.95); // для светлой темы
+    color: #222;
+}
+
+body.light-theme .why-list li {
+    color: #222; // на всякий случай прописываем цвет для пунктов
+}
+
+body.light-theme .why-content h2 {
+    color: #6a5acd; // или другой контрастный, если хочешь
+}
+.why-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.why-content h2 {
+    font-size: 2.5em;
+    color: #6a5acd;
+    margin-bottom: 20px;
+}
+
+.why-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.why-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Анимация появления блока при наведении */
+.hero:hover .why-us {
+    bottom: 0;
+}
+
+.hero:hover .why-content {
+    opacity: 1;
+}
+
+.hero:hover .hero-content {
+    opacity: 0; /* Теперь текст "Компьютер с нами — это просто" исчезает */
+}
+
+
+/* Анимация появления */
+.show-why {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+/* Анимация появления */
+.show-why {
+    opacity: 1;
+    transform: translateY(0);
+}

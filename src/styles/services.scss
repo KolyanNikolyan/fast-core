@@ -1,0 +1,19 @@
+.services {
+  h2 {
+    text-align: center;
+  }
+
+  .service-list {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    color: white;
+  }
+
+  .service-card {
+    background: #292654;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}

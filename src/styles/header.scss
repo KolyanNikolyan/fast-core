@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #14122b;
+    color: white;
+
+
+
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; // <-- Центрируем навигацию
+}
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.theme-toggle {
+    margin-left: auto;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #888;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

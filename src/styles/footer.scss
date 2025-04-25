@@ -1,0 +1,17 @@
+footer {
+    background: #14122b;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+/* === Анимация появления контента === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
